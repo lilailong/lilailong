@@ -1,6 +1,6 @@
 
 var defaultPageSize = 5;
-var arr = eval('[{"title":"mytest2","date":"2017-12-28 21:44:12","desc":""},{"title":"test1","date":"2017-12-28 21:19:24","desc":""}]');
+var arr = eval('[{"title":"test3","date":"2017-12-28 21:57:34","desc":""},{"title":"mytest2","date":"2017-12-28 21:44:12","desc":""},{"title":"test1","date":"2017-12-28 21:19:24","desc":""}]');
 function get(currentPage) {
 	return getResult(currentPage, defaultPageSize);
 }
