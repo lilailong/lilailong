@@ -4,12 +4,14 @@
 ### 踉踉跄跄折腾终于搞定了，感谢雨燕姐姐的牛腿，下面对整个博文的发布流程和原理进行分析，不足或者错误之处还请指正。
 
 # 准备工作
-### 首先要有自己的github账号，然后创建一个新的项目：
+首先要有自己的github账号，然后创建一个新的项目：
+
 ![Smaller icon](http://lilailong.github.io/picture/1.png) ，
 
 然后我们将该项目拷贝到本机，命令git clone 项目所在地址,例如我的命令
+
 ![Smaller icon](http://lilailong.github.io/picture/2.png) 
-### 那么本地就有了github该项目的一个副本了。
+那么本地就有了github该项目的一个副本了。
 
 # 开始搭建自己的博客
 下图为搭建博客的原理
@@ -44,11 +46,11 @@
 
 4. 同步到线上Github
 
-	git add -A
+        git add -A
 	
         git commit -m "**"
     
-	git push origin master -f
+        git push origin master -f
 
 5. 今后写第二篇时候，就回到第一步，tt -type create -file test2然后一次往下执行。
 

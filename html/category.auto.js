@@ -1,6 +1,6 @@
 
 var defaultPageSize = 5;
-var arr = eval('[{"title":"献给所有想在github.io中写博文的人","date":"2017-12-29 11:12:05","desc":""},{"title":"github.io","date":"2017-12-28 22:47:58","desc":""}]');
+var arr = eval('[{"title":"献给所有想在github.io中写博文的人","date":"2017-12-29 11:25:10","desc":""},{"title":"github.io","date":"2017-12-28 22:47:58","desc":""}]');
 function get(currentPage) {
 	return getResult(currentPage, defaultPageSize);
 }
