@@ -11,6 +11,7 @@
 然后我们将该项目拷贝到本机，命令git clone 项目所在地址,例如我的命令
 
 ![Smaller icon](http://lilailong.github.io/picture/2.png) 
+
 那么本地就有了github该项目的一个副本了。
 
 # 开始搭建自己的博客
