@@ -1,6 +1,6 @@
 # 献给所有想在Github.io中想写博文的人
 
-### (摘抄于https://blog.csdn.net/qibin0506/article/details/51813428）
+(摘抄于https://blog.csdn.net/qibin0506/article/details/51813428）
 ### 踉踉跄跄折腾终于搞定了，感谢雨燕姐姐的牛腿，下面对整个博文的发布流程和原理进行分析，不足或者错误之处还请指正。
 
 # 准备工作
@@ -19,7 +19,7 @@
 从上图可以看出，如果想通过域名访问lilailong.github.io，那么在url中输入*.github.io后，Github的服务器首先返回的储存在线上Github的index.html文件，该文件的作用整个显示分页、调用css、js，所以index.html不用自己写，直接下载即可。也就是说在对域名访问之前，我们应该在线上github中准备好这些文件。
 那么接下的事情，就是在本机的github仓库中准备好这些文件，再同步到线上那么用户就可以通过域名看到我们的博客了。
 原理，毕。
-#正式开写
+# 正式开写
 
 
 * 准备工具－－TitanPages软件可以帮助我们完成上述操作，该下载地址<https://github.com/qibin0506/TitanPages>进行下载，Linux用户直接下载tt文件，该tt文件就是一个执行文件，将tt文件复制到项目下，直接运行./tt即可 Mac(可能现在还存在bug我试了几次，tt不能直行成功)和Window同理。
