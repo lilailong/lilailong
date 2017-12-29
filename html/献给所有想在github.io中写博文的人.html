@@ -8,7 +8,11 @@
 
 <p>#准备工作</p>
 
-<h3>首先要有自己的github账号，然后创建一个新的项目：<img src="http://lilailong.github.io/picture/1.png" alt="Smaller icon" /> ，然后我们将该项目拷贝到本机，命令git clone 项目所在地址,例如我的命令<img src="http://lilailong.github.io/picture/2.png" alt="Smaller icon" /></h3>
+<h3>首先要有自己的github账号，然后创建一个新的项目：</h3>
+
+<p><img src="http://lilailong.github.io/picture/1.png" alt="Smaller icon" /> ，
+然后我们将该项目拷贝到本机，命令git clone 项目所在地址,例如我的命令
+<img src="http://lilailong.github.io/picture/2.png" alt="Smaller icon" /></p>
 
 <h3>那么本地就有了github该项目的一个副本了。</h3>
 
@@ -30,33 +34,35 @@
 </ul>
 
 <p>准备好了我们的工具tt、几个支持的包，那么我们的创建博文工作便可以开始了。
-这时我们的文件目录应该如下：
-<img src="http://lilailong.github.io/picture/4.png" alt="Mou icon" /></p>
+这时我们的文件目录应该如下：</p>
+
+<p><img src="http://lilailong.github.io/picture/4.png" alt="Mou icon" /></p>
 
 <p>首先，我们要生成一个博文：</p>
 
 <ol>
-<li>生成最初使的md文件
+<li><p>生成最初使的md文件
 执行命令:tt -type create -file test
-这是我们会发现多了个文件夹raw中多出来一个test.md的文件，这也是我们今后写博文的文件，我们的博文都是通过markdown格式进行编写然后发布的。</li>
-<li>将生成的md文件用./content.html模板渲染成html命令如下：</li>
+这是我们会发现多了个文件夹raw中多出来一个test.md的文件，这也是我们今后写博文的文件，我们的博文都是通过markdown格式进行编写然后发布的。</p></li>
+
+<li><p>将生成的md文件用./content.html模板渲染成html命令如下：</p></li>
 </ol>
 
-<p>tt -type build -file test -author 作者 -tmpl ./content.html
-3. 使用tt -type cate就可以完成目录的自动创建(如果此时显示html中的category.auto.js已经存在，要强行覆盖，因为这个文件是上一次的目录文件)
-4. 同步到线上Github</p>
-
-<pre><code>git add -A
-
-git commit -m &quot;**&quot;
-
-git push origin master -f
-</code></pre>
+<p>tt -type build -file test -author 作者 -tmpl ./content.html</p>
 
 <ol>
-<li>今后第二篇时候，就回到第一步，tt -type create -file test2然后一次往下执行。
+<li><p>使用tt -type cate就可以完成目录的自动创建(如果此时显示html中的category.auto.js已经存在，要强行覆盖，因为这个文件是上一次的目录文件)</p></li>
 
-<br /></li>
+<li><p>同步到线上Github</p>
+
+<p>git add -A</p>
+
+<pre><code>git commit -m &quot;**&quot;
+</code></pre>
+
+<p>git push origin master -f</p></li>
+
+<li><p>今后第二篇时候，就回到第一步，tt -type create -file test2然后一次往下执行。</p></li>
 </ol>
 
 				      <footer class="post-footer">

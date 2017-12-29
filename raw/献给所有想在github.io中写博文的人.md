@@ -1,8 +1,13 @@
 # 献给所有想在Github.io中想写博文的人
+
 ###（摘抄于https://blog.csdn.net/qibin0506/article/details/51813428）
 ### 踉踉跄跄折腾终于搞定了，感谢雨燕姐姐的牛腿，下面对整个博文的发布流程和原理进行分析，不足或者错误之处还请指正。
+
 #准备工作
-### 首先要有自己的github账号，然后创建一个新的项目：![Smaller icon](http://lilailong.github.io/picture/1.png) ，然后我们将该项目拷贝到本机，命令git clone 项目所在地址,例如我的命令![Smaller icon](http://lilailong.github.io/picture/2.png) 
+### 首先要有自己的github账号，然后创建一个新的项目：
+![Smaller icon](http://lilailong.github.io/picture/1.png) ，
+然后我们将该项目拷贝到本机，命令git clone 项目所在地址,例如我的命令
+![Smaller icon](http://lilailong.github.io/picture/2.png) 
 ### 那么本地就有了github该项目的一个副本了。
 
 # 开始搭建自己的博客
@@ -22,6 +27,7 @@
 
 准备好了我们的工具tt、几个支持的包，那么我们的创建博文工作便可以开始了。
 这时我们的文件目录应该如下：
+
 ![Mou icon](http://lilailong.github.io/picture/4.png)
 
 首先，我们要生成一个博文：
@@ -29,17 +35,21 @@
 1. 生成最初使的md文件
 执行命令:tt -type create -file test
 这是我们会发现多了个文件夹raw中多出来一个test.md的文件，这也是我们今后写博文的文件，我们的博文都是通过markdown格式进行编写然后发布的。
+
 2. 将生成的md文件用./content.html模板渲染成html命令如下：
 
    tt -type build -file test -author 作者 -tmpl ./content.html
+
 3. 使用tt -type cate就可以完成目录的自动创建(如果此时显示html中的category.auto.js已经存在，要强行覆盖，因为这个文件是上一次的目录文件)
+
 4. 同步到线上Github
 
 	git add -A
 	
-    git commit -m "**"
+        git commit -m "**"
     
 	git push origin master -f
+
 5. 今后第二篇时候，就回到第一步，tt -type create -file test2然后一次往下执行。
 
   
