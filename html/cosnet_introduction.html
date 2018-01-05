@@ -15,7 +15,7 @@
 
 <tbody>
 <tr>
-<td>** crf&amp;reader**</td>
+<td>crf&amp;reader</td>
 <td>v_features：节点特征</td>
 <td>[&lsquo;bifollowers&rsquo;,&lsquo;followers&rsquo;,&hellip;&hellip;.]</td>
 </tr>
@@ -47,7 +47,7 @@
 <tr>
 <td></td>
 <td>f_feature_index:每个类型的边的权重索引</td>
-<td><a href="这里我们假设每个类型的边有3个类型的权重">0,3,6</a></td>
+<td>[0,3,6](这里我们假设每个类型的边有3个类型的权重)</td>
 </tr>
 
 <tr>
@@ -136,7 +136,7 @@
 
 <tr>
 <td></td>
-<td><strong>&amp;&amp;function</strong></td>
+<td><strong>function</strong></td>
 <td></td>
 </tr>
 
@@ -282,15 +282,18 @@ dual+=0.5*||W||^2</li>
 
 <ul>
 <li>计算dW,$$$d\theta$$$,$$$d\lambda$$$</li>
-<li>学习率＝$${\gamma }\div||dW,d\lambda  ||$$</li>
+<li>学习率＝$${\gamma}\div|| dW,d\lambda ||$$</li>
 </ul></li>
 <li>更新参数
 
 <ul>
-<li>更新W,$$$d\theta$$$,$$$d\lambda$$$，再进入Learning阶段反复训练
-I
-&mdash;&mdash;&mdash;&ndash;</li>
+<li>更新W,$$$d\theta$$$,$$$d\lambda$$$，再进入Learning阶段反复训练</li>
 </ul></li>
+</ol>
+
+<hr />
+
+<ol>
 <li>Inference阶段(这个阶段我们利用上述的模型去预测池子里的所有匹配对)
 $$\mathop {\min }\limits_Y (Y;X,W)$$<br /></li>
 </ol>
