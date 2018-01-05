@@ -74,8 +74,10 @@ theta|Paramter参数|一共2\*v_features+f_class\*3个参数
 	* 综上，目标方程的大小计算出来，接下来我们是去优化它。
 5. Projected gradient梯度优化阶段
 	* 计算dW,$$$d\theta$$$,$$$d\lambda$$$
-	* 学习率＝$$\frac{\gamma }{{||\{ dW,d\lambda \} ||}}$$6. 更新参数
+	* 学习率＝$${\gamma }\div||dW,d\lambda  ||$$
+6. 更新参数
 	* 更新W,$$$d\theta$$$,$$$d\lambda$$$，再进入Learning阶段反复训练
 	I
 -----------	
-7. Inference阶段(这个阶段我们利用上述的模型去预测池子里的所有匹配对)	$$\mathop {\min }\limits_Y (Y;X,W)$$	
+7. Inference阶段(这个阶段我们利用上述的模型去预测池子里的所有匹配对)
+	$$\mathop {\min }\limits_Y (Y;X,W)$$	

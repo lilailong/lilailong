@@ -1,6 +1,6 @@
 
 var defaultPageSize = 5;
-var arr = eval('[{"title":"test","date":"2018-01-05 09:49:53","desc":""},{"title":"cosnet_introduction","date":"2018-01-04 22:28:16","desc":""},{"title":"献给所有想在github.io中写博文的人","date":"2017-12-29 11:30:17","desc":""}]');
+var arr = eval('[{"title":"cosnet_introduction","date":"2018-01-05 09:55:16","desc":""},{"title":"test","date":"2018-01-05 09:54:58","desc":""},{"title":"献给所有想在github.io中写博文的人","date":"2017-12-29 11:30:17","desc":""}]');
 function get(currentPage) {
 	return getResult(currentPage, defaultPageSize);
 }
